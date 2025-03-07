@@ -12,29 +12,38 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio: ^5.4.0
-  retrofit: ^4.0.3
-  json_annotation: ^4.8.1
-  get_it: ^7.6.7
-  injectable: ^2.3.2
-  auto_route: ^7.9.2
-  floor: ^1.4.2
-  path_provider: ^2.1.2
-  flutter_secure_storage: ^9.0.0
+
+  # Design pattern
+  flutter_bloc: ^7.0.1
+  rxdart: ^0.27.1
+
+  # Common
+  retrofit:
+  cupertino_icons:
+  equatable:
+  pedantic:
+  configuration:
+    path: ./configuration
+  flutter_screenutil:
+  get:
   flutter_svg:
-  cupertino_icons: ^1.0.2
-  form_field_validator: ^1.1.0
-  cached_network_image: ^3.2.0
-  flutter_rating_bar: ^4.0.1
-  flutter_widget_from_html_core: ^0.15.1
-  animations: ^2.0.11
-  url_launcher: ^6.3.0
+  google_fonts:
+  smooth_page_indicator:
+  cached_network_image:
+  hive:
+  hive_flutter:
+  path_provider:
+  shadow:
+  flutter_rating_bar:
+  pretty_dio_logger: ^1.4.0
 dev_dependencies:
-  retrofit_generator: ^8.0.5
-  build_runner: ^2.4.7
-  injectable_generator: ^2.4.2
-  floor_generator: ^1.4.2
-  auto_route_generator: ^7.3.2
+  build_runner:
+  hive_generator:
+  flutter_test:
+    sdk: flutter
+  retrofit_generator: any
+  json_serializable: any
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -55,29 +64,29 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/icons/
-    - assets/Illustration/
-    - assets/flags/
-    - assets/logo/
-    - assets/screens/
-
+    - assets/icon/
   fonts:
-    - family: Plus Jakarta
+    - family: Quicksand
       fonts:
-        - asset: assets/fonts/plus_jakarta/PlusJakartaDisplay-Regular.otf
-        - asset: assets/fonts/plus_jakarta/PlusJakartaDisplay-Medium.otf
-          weight: 500
-        - asset: assets/fonts/plus_jakarta/PlusJakartaDisplay-Bold.otf
-          weight: 700
-    - family: Grandis Extended
+        - asset: assets/fonts/Quicksand-Regular.ttf
+
+    - family: Lato
       fonts:
-        - asset: assets/fonts/grandis_extended/GrandisExtended-Regular.ttf
-        - asset: assets/fonts/grandis_extended/GrandisExtended-Thin.ttf
-          weight: 300
-        - asset: assets/fonts/grandis_extended/GrandisExtended-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/grandis_extended/GrandisExtended-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/grandis_extended/GrandisExtended-Black.ttf
-          weight: 900
+        - asset: assets/fonts/Lato-Regular.ttf
+
+    - family: Gilroy_Medium
+      fonts:
+        - asset: assets/fonts/Gilroy_Medium.otf
+
+    - family: Gilroy_Regular
+      fonts:
+        - asset: assets/fonts/Gilroy_Regular.otf
+
+    - family: Gilroy_Bold
+      fonts:
+        - asset: assets/fonts/Gilroy_Bold.otf
+
+    - family: Gilroy_SemiBold
+      fonts:
+        - asset: assets/fonts/Gilroy_SemiBold.otf
 
